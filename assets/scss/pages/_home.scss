@@ -29,11 +29,12 @@
     width: 100%;
     display: flex;
     flex-direction:column;
+  }
+  h2{
+    align-self: flex-start;
+  }
 }
-h2{
-  align-self: flex-start;
-}
-}
+
 
 @media #{$tablet}{
   .section__choice{
