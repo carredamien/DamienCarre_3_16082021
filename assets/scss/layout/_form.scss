@@ -2,23 +2,19 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 auto 0;
+  width: 100%;
   padding: 0.5rem;
   background-color: $bg-form;
   color:$cfp;
   label {
-    display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
-    width: 30%;
+    padding: 0.5rem 0.5rem 1rem 3rem;
   }
   i {
-    padding: 0.5rem 0.5rem 1rem;
     font-size: 1.6rem;
   }
   .search {
-    // height: 100%;
-    // width: 30%;
+    width: 15rem;
+    // min-width: 10rem;
     padding: 1rem;
     font-size: 1.7rem;
     border: none;
