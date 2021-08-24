@@ -468,7 +468,6 @@ form .search {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 2rem;
   }
 }
@@ -485,6 +484,7 @@ form .search {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .restaurants article {
     margin-top: 2rem;
@@ -501,6 +501,90 @@ form .search {
   .restaurants .card:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 3px 6px #f2f2f2;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 2rem 4rem;
+  background-color: #353535;
+}
+
+footer h3 {
+  font-family: "Shrikhand";
+  color: #fff;
+  font-size: 2.2rem;
+  margin: 0 0 1rem 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+footer ul li {
+  margin-top: 1rem;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+
+footer ul li a i {
+  margin-right: 1rem;
+}
+
+footer ul .fa-hands-helping {
+  font-size: 0.9rem;
+  transform: rotate(-10deg);
+}
+
+@media (min-width: 578px) {
+  footer h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer ul {
+    align-items: center;
+  }
+  footer ul li {
+    padding: 0.5rem;
+  }
+  footer ul li a {
+    font-size: 1.8rem;
+  }
+  footer ul .fa-hands-helping {
+    font-size: 1.6rem;
+    transform: rotate(-10deg);
+  }
+}
+
+@media (min-width: 990px) {
+  footer {
+    margin-top: 10rem;
+  }
+  footer h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer ul {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+  }
+  footer ul li {
+    padding: 0.5rem;
+  }
+  footer ul li a {
+    font-size: 1.6rem;
+  }
+  footer ul .fa-hands-helping {
+    font-size: 1.4rem;
+    transform: rotate(-10deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
