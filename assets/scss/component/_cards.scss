@@ -116,6 +116,96 @@
 
 }
 
+//cards menu
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    align-self: flex-start;
+    display: inline-block;
+    width: 4rem;
+    margin: 1rem 2rem 1rem 3rem;
+    padding: 1rem 0rem 0.5rem ;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid $green;
+    color: $cfp;
+  }
+}
+
+.container__articles--menu{
+  position: relative;
+  background-color: $white;
+  border-radius: 2rem;
+  width: 90%;
+  margin: 1rem 0;
+  overflow: hidden;
+  cursor: pointer;
+
+  h4{
+    margin: 1rem 2rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  &--content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1.5rem;
+    
+    p{
+      font-size: 1.4rem;
+    }
+    
+    & .price{
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+      font-weight: bold;
+      // transform: scaleX(1);
+      transition: right 0.3s ease-in-out;
+      // transform-origin: top left;
+    }
+  }
+
+}
+
+
+.btn--valid{
+  position: absolute;
+  top:0;
+  right: -6rem;
+  height: 100%;
+  width: 6rem;
+  background-color: $green;
+  border: none;
+  border-radius: 0 2rem 2rem 0;
+  transition: right 0.28s ease-in-out;
+
+  i{
+    color:$green;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    background-color:  $white;
+    border-radius: 50%;
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease-in-out ;
+  }
+}
+.container__articles--menu:hover .btn--valid{
+  right: 0;
+}
+.container__articles--menu:hover  .price{
+  right: 9rem;
+}
+.container__articles--menu:hover .btn--valid i{
+  transform: rotate(360deg);  
+}
+
+
 @media #{$tablet}{
   .restaurants {
     width: 70%;
@@ -127,7 +217,13 @@
       margin-top: 2rem;
     }
   }
-
+  .container__articles--menu{
+    width: 50%;
+    padding: 1rem;
+  } 
+  .menu h3{
+    margin: 3rem auto 1rem;
+  }
 }
 @media #{$desktop}{
   .restaurants {
@@ -163,5 +259,11 @@
       }
     }
   }
-
+  .container__articles--menu{
+    width: 30%;
+    padding: 1rem;
+  } 
+  .menu h3{
+    margin: 3rem auto 1rem;
+  }
 }

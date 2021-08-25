@@ -157,7 +157,7 @@ header .img--logo {
   }
   .fa-arrow-left {
     font-size: 3rem;
-    left: 4rem;
+    left: 20%;
   }
 }
 
@@ -241,15 +241,6 @@ form .search {
   align-self: flex-start;
 }
 
-@media (min-width: 578px) {
-  .section__choice {
-    width: 70%;
-  }
-  h2 {
-    margin-left: 4rem;
-  }
-}
-
 @media (min-width: 990px) {
   .section__choice {
     width: 100%;
@@ -261,6 +252,86 @@ form .search {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+header {
+  box-shadow: none;
+}
+
+.container--img--menu {
+  width: 100%;
+  max-width: 90rem;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.container--img--menu img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.menu {
+  position: relative;
+  top: -5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 3rem 3rem 0 0;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.title i {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 578px) {
+  .container--img--menu {
+    width: 100%;
+    height: 50rem;
+  }
+  .container--img--menu img {
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .title {
+    width: 80%;
+  }
+}
+
+@media (min-width: 990px) {
+  .container--img--menu {
+    width: 100%;
+    height: 50rem;
+  }
+  .container--img--menu img {
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .title {
+    width: 40%;
+    margin-top: 4rem;
+  }
+  .menu {
+    width: 60%;
   }
 }
 
@@ -337,6 +408,11 @@ form .search {
 
 .fa-list {
   padding-right: 1rem;
+}
+
+.btn--command {
+  margin: 4rem 0 5rem;
+  padding: 1.5rem 4rem;
 }
 
 .restaurants {
@@ -460,6 +536,92 @@ form .search {
   color: #9356DC;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu h3 {
+  align-self: flex-start;
+  display: inline-block;
+  width: 4rem;
+  margin: 1rem 2rem 1rem 3rem;
+  padding: 1rem 0rem 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #99E2D0;
+  color: #353535;
+}
+
+.container__articles--menu {
+  position: relative;
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 90%;
+  margin: 1rem 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container__articles--menu h4 {
+  margin: 1rem 2rem 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.container__articles--menu--content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1.5rem;
+}
+
+.container__articles--menu--content p {
+  font-size: 1.4rem;
+}
+
+.container__articles--menu--content .price {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  font-weight: bold;
+  transition: right 0.3s ease-in-out;
+}
+
+.btn--valid {
+  position: absolute;
+  top: 0;
+  right: -6rem;
+  height: 100%;
+  width: 6rem;
+  background-color: #99E2D0;
+  border: none;
+  border-radius: 0 2rem 2rem 0;
+  transition: right 0.28s ease-in-out;
+}
+
+.btn--valid i {
+  color: #99E2D0;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container__articles--menu:hover .btn--valid {
+  right: 0;
+}
+
+.container__articles--menu:hover .price {
+  right: 9rem;
+}
+
+.container__articles--menu:hover .btn--valid i {
+  transform: rotate(360deg);
+}
+
 @media (min-width: 578px) {
   .restaurants {
     width: 70%;
@@ -469,6 +631,13 @@ form .search {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+  }
+  .container__articles--menu {
+    width: 50%;
+    padding: 1rem;
+  }
+  .menu h3 {
+    margin: 3rem auto 1rem;
   }
 }
 
@@ -501,6 +670,13 @@ form .search {
   .restaurants .card:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 3px 6px #f2f2f2;
+  }
+  .container__articles--menu {
+    width: 30%;
+    padding: 1rem;
+  }
+  .menu h3 {
+    margin: 3rem auto 1rem;
   }
 }
 
