@@ -1,79 +1,94 @@
-footer{
+footer {
   margin-top: 4rem;
   padding: 2rem 2rem 4rem;
   background-color: $bg-footer;
-  h3{
+
+  h3 {
     font-family: "Shrikhand";
     color: $white;
     font-size: 2.2rem;
     margin: 0 0 1rem 0;
   }
-  ul{
+
+  ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    li{
-    margin-top: 1rem;
-      a{
-        color:$white;
+
+    li {
+      margin-top: 1rem;
+
+      a {
+        color: $white;
         font-size: 1.4rem;
         letter-spacing: 0.05rem;
-        i{
+
+        i {
           margin-right: 1rem;
         }
       }
     }
-    .fa-hands-helping{
+
+    .fa-hands-helping {
       font-size: 0.9rem;
       transform: rotate(-10deg);
     }
   }
 }
 
-@media #{$tablet}{
-  footer{
-    h3{
+@media #{$tablet} {
+  footer {
+    h3 {
       text-align: center;
       font-size: 3rem;
     }
-    ul{
+
+    ul {
       align-items: center;
-      li{
+
+      li {
         padding: 0.5rem;
-        a{
+
+        a {
           font-size: 1.8rem;
         }
       }
-      .fa-hands-helping{
+
+      .fa-hands-helping {
         font-size: 1.6rem;
         transform: rotate(-10deg);
       }
     }
-  } 
+  }
 }
-@media #{$desktop}{
-  footer{
-    
-    h3{
+
+@media #{$desktop} {
+  footer {
+
+    h3 {
       text-align: center;
       font-size: 3rem;
       font-family: "Shrikhand";
     }
-    ul{
+
+    ul {
       flex-direction: row;
       justify-content: space-around;
       margin-top: 4rem;
-      li{
+
+      li {
         padding: 0.5rem;
-        a{
+
+        a {
           font-size: 1.6rem;
         }
       }
-      .fa-hands-helping{
+
+      .fa-hands-helping {
         font-size: 1.4rem;
         transform: rotate(-10deg);
       }
     }
-  } 
+  }
 }

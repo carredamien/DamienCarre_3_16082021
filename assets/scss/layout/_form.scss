@@ -1,16 +1,19 @@
-form{
+form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: $bg-form;
-  color:$cfp;
+  color: $cfp;
+
   label {
     padding: 0.5rem 0.5rem 1rem 3rem;
   }
+
   i {
     font-size: 1.6rem;
   }
+
   .search {
     width: 15rem;
     padding: 1rem;
@@ -18,21 +21,22 @@ form{
     border: none;
     text-transform: capitalize;
     font-weight: bold;
-    color:$cfp;
+    color: $cfp;
     background-color: transparent;
     cursor: pointer;
   }
 }
 
-@media #{$tablet}{
-  form{
+@media #{$tablet} {
+  form {
     i {
       font-size: 2.6rem;
       padding: 1rem;
     }
+
     .search {
       width: 20rem;
       font-size: 2.2rem;
     }
-  }  
+  }
 }

@@ -1,17 +1,19 @@
-.section__main{
+.section__main {
   background-color: $bg-grey;
   width: 100%;
 
-  &--home{
+  &--home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:2rem;
-    h2{
+    padding: 2rem;
+
+    h2 {
       text-align: center;
       line-height: 1.3;
     }
-    p{
+
+    p {
       text-align: center;
       line-height: 1.2;
     }
@@ -25,33 +27,37 @@
   margin-top: 2rem;
   width: 100%;
 
-  aside{
+  aside {
     width: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
-  h2{
+
+  h2 {
     align-self: flex-start;
   }
 }
 
 
 
-@media #{$tablet}{
-  .section__choice{
+@media #{$tablet} {
+  .section__choice {
     width: 70%;
+  }
+}
+
+@media #{$desktop} {
+  .section__choice {
+    width: 100%;
+
+    h2 {
+      margin: 1rem auto;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
-@media #{$desktop}{
-  .section__choice{
-    width: 100%;
-    h2{
-      margin:1rem auto;
-    }
-  aside{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    } 
-  }  
 }

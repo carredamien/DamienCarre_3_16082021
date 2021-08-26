@@ -1,61 +1,68 @@
-.btn{
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem 2rem;
-  border:none;
+  border: none;
   box-shadow: 0px 3px 8px 0px #cacaca;
   cursor: pointer;
-  a{
+
+  a {
     font-size: 1.6rem;
     text-decoration: none;
     font-weight: bold;
     color: $black;
   }
-  &:hover{
+
+  &:hover {
     box-shadow: 0px 3px 8px 3px #cacaca;
   }
 }
 
 // $btn-color: linear-gradient(lighten($pink, ($pink:25%)), (lighten($pink, $pink,0%)));
-.btn--explorer{
+.btn--explorer {
   position: relative;
-  margin:2rem 0 4rem;
+  margin: 2rem 0 4rem;
   border-radius: 4rem;
-  background: linear-gradient(lighten($pink,25%), (lighten($pink,0%)));
+  background: linear-gradient(lighten($pink, 25%), (lighten($pink, 0%)));
   opacity: 1;
   transition: opacity 0.3s linear;
   z-index: 1;
-  a{
+
+  a {
     color: $white;
   }
-  &:hover{
+
+  &:hover {
     opacity: 0.9;
   }
 }
-.btn--functioning{
+
+.btn--functioning {
   position: relative;
   margin: 1rem 2rem 1.5rem 4rem;
-  padding:2.5rem;
-  border-radius: 2rem; 
+  padding: 2.5rem;
+  border-radius: 2rem;
   box-shadow: 0px 4px 10px 0px #CACACA;
 
-  i{
+  i {
     margin-right: 3rem;
     color: $cfp;
     font-size: 1.8rem;
   }
-  a{
+
+  a {
     font-size: 1.5rem;
   }
-  .number{
+
+  .number {
     position: absolute;
     display: block;
     width: 2.5rem;
     height: 2.5rem;
     line-height: 2.5rem;
-    top:50%;
-    left:-1.3rem;
+    top: 50%;
+    left: -1.3rem;
     transform: translateY(-50%);
     // padding: 1rem;
     color: $white;
@@ -63,11 +70,12 @@
     border-radius: 50%;
   }
 }
-.fa-list{
+
+.fa-list {
   padding-right: 1rem;
 }
 
-.btn--command{
+.btn--command {
   margin: 4rem 0 5rem;
   padding: 1.5rem 4rem;
 }
