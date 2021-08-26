@@ -1,7 +1,15 @@
+// @font-face {
+//   font-family: "Shrikhand";
+//   src: url('../../font/Shrikhand-Regular.ttf') format("truetype");
+//   font-weight: 400;
+// }
 @font-face {
-  font-family: "Shrikhand";
-  src: url('../../font/Shrikhand-Regular.ttf') format("truetype");
-  font-weight: 400;
+    font-family: "Shrikhand";
+    src: url('shrikhand-regular-webfont.woff2') format('woff2'),
+         url('shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 @font-face {
   font-family: 'Roboto';
@@ -61,8 +69,24 @@ main{
   margin-top: 0.3rem;
 }
 .app{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items:center;
-}
+  overflow: hidden;
+// }
+  animation: display-app 2s ease-out ;
+  animation-fill-mode: both;
 
+}
+@keyframes display-app {
+  0%{ 
+  opacity: 0;
+  }
+  50%{
+  opacity: 0.8;
+  }
+  100%{
+  opacity: 1;
+  }
+}

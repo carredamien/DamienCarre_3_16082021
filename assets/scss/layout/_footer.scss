@@ -54,10 +54,11 @@ footer{
 }
 @media #{$desktop}{
   footer{
-    margin-top: 10rem;
+    
     h3{
       text-align: center;
       font-size: 3rem;
+      font-family: "Shrikhand";
     }
     ul{
       flex-direction: row;

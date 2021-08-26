@@ -54,8 +54,9 @@ table {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../../font/Shrikhand-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("shrikhand-regular-webfont.woff2") format("woff2"), url("shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -124,18 +125,34 @@ main {
 }
 
 .app {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  animation: display-app 2s ease-out;
+  animation-fill-mode: both;
 }
 
-header {
+@keyframes display-app {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header--home {
   position: relative;
   border-bottom: 0px solid #cacaca;
-  box-shadow: 0px 3px 8px 0px #cacaca;
+  box-shadow: 0px 6px 10px 0px #cacaca;
 }
 
-header .img--logo {
+.header--home .img--logo {
   display: block;
   justify-content: center;
   width: 18rem;
@@ -241,6 +258,12 @@ form .search {
   align-self: flex-start;
 }
 
+@media (min-width: 578px) {
+  .section__choice {
+    width: 70%;
+  }
+}
+
 @media (min-width: 990px) {
   .section__choice {
     width: 100%;
@@ -262,12 +285,12 @@ header {
 .container--img--menu {
   width: 100%;
   max-width: 90rem;
-  height: 25rem;
+  height: 28rem;
   overflow: hidden;
 }
 
 .container--img--menu img {
-  height: 25rem;
+  height: 28rem;
   width: 100%;
   object-fit: cover;
   object-position: center bottom;
@@ -305,7 +328,7 @@ header {
     height: 50rem;
   }
   .container--img--menu img {
-    height: 50rem;
+    height: 55rem;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -316,9 +339,13 @@ header {
 }
 
 @media (min-width: 990px) {
+  .menu {
+    margin-top: 8rem;
+  }
   .container--img--menu {
     width: 100%;
     height: 50rem;
+    border-radius: 1rem;
   }
   .container--img--menu img {
     height: 50rem;
@@ -673,11 +700,108 @@ header {
   }
   .container__articles--menu {
     width: 30%;
+    min-width: 35rem;
     padding: 1rem;
   }
   .menu h3 {
     margin: 3rem auto 1rem;
   }
+  .menu {
+    padding-bottom: 4rem;
+  }
+}
+
+.container--loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #353535;
+  animation: display 2s linear;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+@keyframes display {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  70% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.loader {
+  position: relative;
+  top: -10%;
+  height: 17rem;
+  width: 17rem;
+  opacity: 1;
+  animation: loader linear 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.4);
+    opacity: 0;
+  }
+}
+
+.circle {
+  font-size: 3rem;
+  color: #F6F6F6;
+  animation: rotate 2s ease-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle--fork {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.circle--knife {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.circle--spoon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle--glass {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 footer {
@@ -740,12 +864,10 @@ footer ul .fa-hands-helping {
 }
 
 @media (min-width: 990px) {
-  footer {
-    margin-top: 10rem;
-  }
   footer h3 {
     text-align: center;
     font-size: 3rem;
+    font-family: "Shrikhand";
   }
   footer ul {
     flex-direction: row;

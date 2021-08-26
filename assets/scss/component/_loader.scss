@@ -1,0 +1,94 @@
+.container--loader{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100%;
+  background-color: $cfp;
+  animation: display 2s linear ;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+@keyframes display {
+  0%{ 
+  opacity: 1;
+  z-index: 2;
+  }
+  70%{
+    opacity: 1;
+    z-index: 2;
+  }
+  100%{
+  opacity: 0;
+  z-index: -1;
+  }
+}
+
+.loader{
+  position: relative;
+  top:-10%;
+  height: 17rem;
+  width: 17rem;
+  opacity: 1;
+  animation: loader linear 1.5s;
+  animation-fill-mode: both;
+  } 
+
+@keyframes loader{
+  0%{ 
+    transform: rotate(0) scale(1);
+    // transform: scale(1);
+  }
+  // 50%{
+  //   // transform: rotate(180deg) scale(0.6);
+  //   transform: rotate(360deg) scale(0.8);
+    
+    
+  // }
+  100%{
+      transform: rotate(360deg) scale(0.4);
+      opacity: 0;
+  }
+}
+.circle{
+  font-size: 3rem;
+  color: $bg-grey;
+  animation: rotate 2s ease-out;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.circle--fork{
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+}
+.circle--knife{
+  position: absolute;
+  top: 50%;
+  right:0%;
+  transform: translateY(-50%);
+ 
+}
+.circle--spoon{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.circle--glass{
+  position: absolute;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
+}

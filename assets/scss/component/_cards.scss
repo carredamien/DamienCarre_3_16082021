@@ -261,9 +261,13 @@
   }
   .container__articles--menu{
     width: 30%;
+    min-width: 35rem;
     padding: 1rem;
   } 
   .menu h3{
     margin: 3rem auto 1rem;
+  }
+  .menu{
+    padding-bottom: 4rem;
   }
 }

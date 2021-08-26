@@ -37,6 +37,11 @@
 
 
 
+@media #{$tablet}{
+  .section__choice{
+    width: 70%;
+    }
+  }
 @media #{$desktop}{
   .section__choice{
     width: 100%;

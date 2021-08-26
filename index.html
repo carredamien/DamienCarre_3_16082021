@@ -21,11 +21,19 @@
   <link rel="stylesheet" href="./assets/scss/main.css">
 </head>
 <body>
-  <header>
+  <header class="header--home">
     <a href="./index.html"><img class="img--logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></a>
-  </header>
+  </header >
   <main>
     <div class="app">
+      <div class="container--loader">
+        <div class="loader">
+          <div class="circle circle--fork"><i class="fas fa-utensil-fork"></i></div>
+          <div class="circle circle--knife"><i class="fas fa-utensil-knife fa-flip-horizontal"></i></div>
+          <div class="circle circle--spoon"><i class="fas fa-utensil-spoon"></i></div>
+          <div class="circle circle--glass"><i class="fas fa-wine-glass"></i></div>
+        </div>
+      </div>
      <form method="get" action="form.php">
       <label for="search"><i class="fas fa-map-marker-alt"></i></label>
       <input class="search" type="text" name="search" id="search" value="Paris, Belleville">
