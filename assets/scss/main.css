@@ -728,6 +728,11 @@ header {
   transform: rotate(360deg);
 }
 
+.container__articles--menu:hover .container__articles--menu--content {
+  width: 20rem;
+  min-width: 20rem;
+}
+
 @media (min-width: 578px) {
   .restaurants {
     width: 70%;
