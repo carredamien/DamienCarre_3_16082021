@@ -19,14 +19,13 @@
   }
 }
 
-// $btn-color: linear-gradient(lighten($pink, ($pink:25%)), (lighten($pink, $pink,0%)));
 .btn--explorer {
   position: relative;
   margin: 2rem 0 4rem;
   border-radius: 4rem;
-  background: linear-gradient(lighten($pink, 25%), (lighten($pink, 0%)));
+  background: linear-gradient(10deg, lighten($pink, 25%), (lighten($pink, 0%)));
   opacity: 1;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 1;
 
   a {
@@ -34,8 +33,7 @@
   }
 
   &:hover{
-    opacity: 0.8;
-    color:red;
+    background: linear-gradient(-45deg, lighten($pink, 25%), (lighten($pink, 10%)));
   }
 }
 
@@ -106,3 +104,74 @@
   margin: 4rem 0 5rem;
   padding: 1.5rem 4rem;
 }
+
+
+//heart
+
+.heart {
+  position: absolute;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  top: -2rem;
+  right: 2rem;
+  cursor: pointer;
+  
+  & i {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 2rem;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+
+   &:hover{
+    opacity: 0;
+   }
+  }
+
+  & i:last-child{
+    font-size: 2.2rem;
+    position: absolute;
+    top:-0.1rem;
+    left: -0.1rem;
+    background: -webkit-linear-gradient( 45deg, lighten($pink, 55%), darken($pink,10%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.menu .heart{
+  top:2rem;
+  right: 6rem;
+
+    & i {
+      position: relative;
+      top:0rem;
+      left: 0;
+      font-size: 2rem;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 1;
+
+    &:hover{
+      opacity: 0;
+    }
+  }
+ 
+  & i:last-child{
+    font-size: 2.2rem;
+    top:-2.1rem;
+    left: -0.1rem;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+

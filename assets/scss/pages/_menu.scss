@@ -4,7 +4,6 @@ header {
 .container--menu{
   height: 28rem;
   width: 100%;
-  background-color:red;
   overflow: hidden;
   & img {
     height: 28rem;
@@ -45,7 +44,6 @@ header {
 .container--menu{
   height: 35rem;
   width: 100%;
-  background-color:red;
   & img {
     height: 35rem;
     width: 100%;
@@ -64,6 +62,7 @@ header {
   .title {
     width: 40%;
     margin-top: 4rem;
+    margin-left: 5rem;
   }
   .menu {
     width: 60%;
