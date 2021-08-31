@@ -29,6 +29,7 @@ footer {
         }
       }
     }
+ 
 
     .fa-hands-helping {
       font-size: 0.9rem;
@@ -64,6 +65,9 @@ footer {
 }
 
 @media #{$desktop} {
+  //   footer ul li:nth-child(2){
+  //    margin-left: -16rem;
+  //  }
   footer {
 
     h3 {
@@ -79,7 +83,10 @@ footer {
 
       li {
         padding: 0.5rem;
-
+        transform: translateX(-50%);
+        &:first-child{
+          transform: translateX(-25%);
+        }
         a {
           font-size: 1.6rem;
         }
