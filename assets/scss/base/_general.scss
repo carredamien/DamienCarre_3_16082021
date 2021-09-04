@@ -13,17 +13,20 @@ body {
   font-family: $ffs;
   animation: overflow 2s;
 }
+
 @keyframes overflow {
-  0%{
+  0% {
     overflow: hidden;
   }
-  100%{
+
+  100% {
     overflow: hidden;
   }
-  
+
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: $ffs;
   font-weight: bold;
   font-size: 2.4rem;

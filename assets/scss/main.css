@@ -75,7 +75,8 @@ body {
   }
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
@@ -255,17 +256,16 @@ form .search {
 }
 
 .wrap--restaurants h1 {
-  align-self: flex-start;
+  align-self: start;
 }
 
 @media (min-width: 578px) {
   .section__choice {
     width: 70%;
   }
-}
-
-.wrap--restaurants h1 {
-  align-self: center;
+  .wrap--restaurants h1 {
+    align-self: center;
+  }
 }
 
 @media (min-width: 990px) {
@@ -820,6 +820,7 @@ header {
   }
   .menu h3 {
     margin: 3rem auto 1rem;
+    transform: translateX(-50%);
   }
 }
 
@@ -829,6 +830,12 @@ header {
   }
   .menu {
     padding-bottom: 4rem;
+  }
+  .menu h4 {
+    font-size: 1.8rem;
+  }
+  .menu p {
+    font-size: 1.6rem;
   }
 }
 

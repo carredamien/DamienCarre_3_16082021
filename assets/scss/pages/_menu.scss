@@ -1,10 +1,12 @@
 header {
   box-shadow: none;
 }
-.container--menu{
+
+.container--menu {
   height: 28rem;
   width: 100%;
   overflow: hidden;
+
   & img {
     height: 28rem;
     width: 100%;
@@ -42,14 +44,16 @@ header {
 
 
 @media #{$tablet} {
-.container--menu{
-  height: 35rem;
-  width: 100%;
-  & img {
+  .container--menu {
     height: 35rem;
     width: 100%;
+
+    & img {
+      height: 35rem;
+      width: 100%;
+    }
   }
-}
+
   .title {
     width: 80%;
   }
@@ -66,9 +70,13 @@ header {
     margin-top: 4rem;
     margin-left: 5rem;
   }
+
   .menu {
     width: 60%;
   }
 }
 
-.fa-stack  { font-size: 0.5em; font-size: 4rem; }
+.fa-stack {
+  font-size: 0.5em;
+  font-size: 4rem;
+}
