@@ -27,11 +27,13 @@ body {
 
 h1,
 h2 {
+  position: relative;
   font-family: $ffs;
   font-weight: bold;
   font-size: 2.4rem;
   padding: 2rem;
 }
+
 
 h3 {
   font-family: $ffs;
@@ -63,6 +65,8 @@ main {
   animation-fill-mode: both;
 
 }
+
+
 
 @keyframes display-app {
   0% {

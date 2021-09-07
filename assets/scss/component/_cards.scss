@@ -1,5 +1,5 @@
 .restaurants {
-
+//.restaurant settings in cards.css
   article {
     display: flex;
     flex-direction: column;
@@ -15,13 +15,14 @@
 .container--articles {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .container--card {
   display: flex;
   height: 24rem;
-  width: 90%;
+  // width: 90%;
   margin: 0 2rem;
 
   & .card {
@@ -41,13 +42,26 @@
     overflow: hidden;
 
     & .container-img {
-      grid-area: img;
       position: relative;
+      grid-area: img;
       height: 18rem;
-      width: 100%;
+      width: 35rem;
       border-radius: 1.5rem 1.5rem 0 0;
       overflow: hidden;
       cursor: pointer;
+      &:after{
+        position: absolute;
+        content: "nouveau";
+        display: inline-block;
+        top: 1rem;
+        right: 2rem;
+        padding: 0.8rem 1rem;
+        border-radius: 0.2rem;
+        background-color: $cat;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: darken($color: $green, $amount: 40%);
+      }
     }
 
     & a {
@@ -69,16 +83,6 @@
     object-position: center;
   }
 
-  .card--category {
-    position: absolute;
-    display: inline-block;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 0.2rem;
-    background-color: $cat;
-    font-size: 1.3rem;
-  }
 
   & .card--content {
     position: relative;
