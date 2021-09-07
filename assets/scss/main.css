@@ -63,6 +63,9 @@ body {
   height: auto;
   width: 100%;
   font-family: "Roboto", sans-serif;
+}
+
+.anim-loader {
   animation: overflow 2s;
 }
 

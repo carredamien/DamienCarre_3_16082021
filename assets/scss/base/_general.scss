@@ -11,6 +11,8 @@ body {
   height: auto;
   width: 100%;
   font-family: $ffs;
+}
+.anim-loader{
   animation: overflow 2s;
 }
 
