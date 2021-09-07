@@ -587,7 +587,7 @@ header {
   cursor: pointer;
 }
 
-.container--card .card .container-img:after {
+.container--card .card .new:after {
   position: absolute;
   content: "nouveau";
   display: inline-block;

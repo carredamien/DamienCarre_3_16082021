@@ -41,7 +41,7 @@
     cursor: pointer;
     overflow: hidden;
 
-    & .container-img {
+    & .container-img{
       position: relative;
       grid-area: img;
       height: 18rem;
@@ -49,6 +49,9 @@
       border-radius: 1.5rem 1.5rem 0 0;
       overflow: hidden;
       cursor: pointer;
+    }
+      .new{
+
       &:after{
         position: absolute;
         content: "nouveau";
