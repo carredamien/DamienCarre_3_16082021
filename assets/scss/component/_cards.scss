@@ -45,7 +45,7 @@
       position: relative;
       grid-area: img;
       height: 18rem;
-      width: 35rem;
+      width: 33rem;
       border-radius: 1.5rem 1.5rem 0 0;
       overflow: hidden;
       cursor: pointer;
@@ -54,7 +54,7 @@
 
       &:after{
         position: absolute;
-        content: "nouveau";
+        content: "Nouveau";
         display: inline-block;
         top: 1rem;
         right: 2rem;
@@ -166,23 +166,23 @@
     width: 28rem;
     min-width: 28rem;
     transition: all 0.3s ease-in-out;
-
-
   }
-
+  
   h4 {
     margin: 0 0 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-
-  p {
-    font-size: 1.4rem;
-    white-space: nowrap;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    white-space: nowrap;
     margin-right: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &--btn {
@@ -192,8 +192,6 @@
     padding: 0 2rem 0 0;
     transform: translateX(0rem);
     transition: transform 0.3s ease-in-out;
-
-
 
     & .price {
       display: flex;
