@@ -24,6 +24,9 @@ header {
   width: 100%;
   background-color: $bg-grey;
   border-radius: 3rem 3rem 0 0;
+  & h2{
+    font-family: $ffp;
+  }
 }
 
 .title {
@@ -40,6 +43,7 @@ header {
     right: 4rem;
     font-size: 2rem;
   }
+
 }
 
 
