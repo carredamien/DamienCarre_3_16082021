@@ -405,6 +405,7 @@ header {
   transition: all 0.3s ease-in-out;
   z-index: 1;
   color: #fff;
+  font-weight: normal;
 }
 
 .btn--explorer:hover {
@@ -895,7 +896,6 @@ header {
   width: 17rem;
   opacity: 1;
   animation: loader linear 2s;
-  animation-fill-mode: both;
 }
 
 @keyframes loader {
