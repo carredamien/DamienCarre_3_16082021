@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./assets/scss/main.css -w --style compressed",
+    "prefix": "postcss ./assets/scss/main.css --use autoprefixer -d ./assets/scss/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carredamien/ohmyfood.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/carredamien/ohmyfood.github.io/issues"
+  },
+  "homepage": "https://github.com/carredamien/ohmyfood.github.io#readme"
+}
