@@ -133,7 +133,7 @@
     position: absolute;
     top: -0.1rem;
     left: -0.1rem;
-    background: -webkit-linear-gradient(45deg, lighten($pink, 55%), darken($pink, 10%));
+    background: -webkit-linear-gradient(170deg, ($secondary-pink), ($pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
